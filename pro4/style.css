@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
+}
+
+.ptext {
+    max-width: 900px;
+    top: 25%;
+    position: relative;
+  
+    
+    color: rgb(255, 255, 255);
+    text-shadow: 3px -7px 12px rgb(8, 8, 8);
+    padding-left: 16px;
+    margin: 0 auto;
+    padding-top: 64px;
+}
+
+
+.hero-section {
+    background: url(img/hro.jpg);
+    background-size: cover;
+    height: 700px;
+    background-attachment: fixed;
+}
+
+.textbg {
+    display: block;
+    font-size: 1.5rem;
+}
+
+b {
+    font-size: 2.9rem;
+}
+
+.work {
+    text-align: center;
+    font-size: 3.2rem;
+    padding: 35px;
+    background-color: rgb(30, 28, 28);
+    letter-spacing: 2px;
+    color: aliceblue;
+
+}
+
+.work>b {
+    font-size: 1.5rem;
+}
+
+.i1,
+.i2,
+.i3 {
+    width: 300px;
+    height: 190px;
+    border-top-left-radius: 24px;
+
+    border-top-right-radius: 24px;
+}
+
+p,
+h1 {
+    color: black;
+    text-shadow: none;
+    margin-top: 21px;
+}
+
+.work-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+   max-width: 1100px;
+   margin: 0 auto;
+}
+
+.card{
+    /* box-shadow: -1px 8px 4px 2px #a69f9f; */
+    box-shadow: 3px 5px 5px rgba(1,1,1,0.2);
+    border-radius: 24px;
+    text-align: center;
+    width: 300px;
+    transition: 0.2s ease-in-out;
+}
+
+.card:hover {   transition: 0.2s ease-in-out;
+    opacity: 86%;
+    transform: scale(1.01);
+    box-shadow: 3px 5px 5px rgba(1,1,1,0.3);
+}
+.grid-item{display: flex;
+    padding: 34px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+@media (max-width:900px) {
+
+    .i1,
+    .i2,
+    .i3,
+    .card {
+        width: 200px;
+    }
+}
+
+@media(max-width:300px) {
+
+    .i1,
+    .i2,
+    .i3,
+    .card {
+        width: 100%;
+    }
+}
+
+p {
+    margin: 30px;
+}
+
+.me {
+    display: flex;
+
+}
+
+.contact {
+    background-color: rgb(43, 75, 46);
+    padding: 40px;
+    width: 50%;
+}
+
+.about {
+    width: 50%;
+    background: rgb(80, 41, 38);
+    padding: 40px;
+}
+
+footer {
+    background-color: rgb(31, 30, 30);
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding: 30px;
+    text-align: center;
+}
