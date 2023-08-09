@@ -1,0 +1,51 @@
+body,html{
+    height: 100%;
+    margin: 0;font-size: 16px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     font-weight: 400;
+     line-height: 1.8em;
+     color: #666;
+}
+.img1{
+    background-image:  url(img/g.proje..png);
+     
+    min-height:100%;
+}
+.img2{
+    background-image: url(img/gta5.png);
+    min-height: 400px;
+}
+.img3{
+    background-image:  url(img/m.png);
+    min-height: 400px;
+}
+.img1,.img2,.img3{
+   background-attachment: fixed;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.ptext{
+    position: absolute;
+    text-align: center;
+    width: 100%;top: 50%;
+   color: rgba(19, 18, 18, 0.658);
+   letter-spacing: 8px;
+   font-size: 40px;
+}
+.textbg{
+ padding:   25px;
+   color: aliceblue;
+    background: rgb(103, 95, 95);
+}
+ 
+.s1{text-align: center;
+    padding: 50px 80px;
+}
+.dark{
+    background: #2e2e2e;
+    color: aliceblue;
+
+}
+
