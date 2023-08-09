@@ -1,0 +1,309 @@
+@media(prefers-color-scheme:light)
+{
+    
+}
+
+
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.dark{
+    background-color: rgb(40, 40, 40);
+    color: rgb(130, 132, 133);
+}
+
+.logo-con>img {
+    
+    height: 60px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+
+    font-size: 23px;
+    border-radius: 10px;
+    transition: 0.2s ease-in-out;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.explore_btn {
+    background-color: orange;
+    align-self: flex-start;
+}
+
+nav {
+    box-shadow: -8px -2px 9px 5px #eae9e9;
+    position: sticky;
+    top: 0;
+    margin-bottom: 32px;
+    background-color: rgb(252, 254, 253);
+    padding: 10px;
+    z-index: 34;
+}
+
+.bar-icon {
+    font-size: 34px;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* margin-left: 15%;
+    margin-right: 15%;*/
+
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.hero_img>img {
+    height: 32rem
+}
+
+.hero {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.tag {
+    padding: 10px;
+    color: white;
+    display: block;
+    background-color: rgb(89, 147, 89);
+    align-self: flex-start;
+}
+
+
+
+.description h1 {
+    font-size: 72px;
+    line-height: 1.2;
+    font-weight: 200;
+}
+
+
+
+
+/* @media(max-width:786px){
+     .hero{
+         flex-direction: column;
+         gap: 1px;
+     }
+     .hero_img{
+         display: flex;
+         justify-content: center;
+     }
+     .hero_img img{
+         width:95% ;
+         height: 40vh;
+     }
+     .description{
+         gap: 10px;
+         padding: 20px;
+         align-items: center;
+     }
+     .description h1{
+         font-size: 32px;
+     }
+ } */
+/*  this is feature section */
+.features {
+    margin-top: 57px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.feature {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    transition: 0.5s ease-in-out;
+}
+
+.feature:hover {
+    transition: 0.5s ease-in-out;
+    box-shadow: 0px 0px 13px 2px #eae9e9;
+}
+
+.feature img {
+    /* width: 20vh;
+    /* width: 24vh;  
+    height: 18vh; */
+    width: 78px;
+
+}
+
+.divider {
+    border: 2px solid gray;
+    width: 100%;
+    margin: 20px;
+}
+
+/*  MEnu section */
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin: 50px 0;
+}
+
+.menu .tag {
+    align-self: center;
+}
+
+.grid {
+    padding: 0 12% ;
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+     "i1 i1 i2 i7"
+     "i1 i1 i6 i7"
+     "i5 i4 i6 i3" ; 
+}
+.grid_img{
+height: 100%;
+width: 100%;
+    border-radius: 10px;
+}
+.grid_img:hover{
+    transform: scale(1.05);
+     
+}
+.grid img{
+    
+    /* width: 200px; */
+    transition: 0.5s ease-in-out;
+}
+
+.item1 {
+    
+    grid-area: i1;
+}
+
+.item2 {
+    grid-area: i2;
+}
+
+.item3 {
+    grid-area: i3;
+}
+
+.item4 {
+    grid-area: i4;
+}
+
+.item5 {
+    grid-area: i5;
+}
+
+.item6 {
+    grid-area: i6;
+}
+
+.item7 {
+    grid-area: i7;
+}
+/* FOOTER SECTION */
+footer{
+
+    background-color: #fff0bc;
+}
+.footer_container{
+    padding: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.link_list h3{
+    margin-bottom: 10px;
+    color: gray;
+}
+.link_list ul {
+   list-style: none;
+}
+.link_list ul li{
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.link_list input{
+padding: 5px 40px ;
+margin-bottom: 10px;
+}
+.icon_con{
+    display: flex;
+    gap: 15px;
+}
+ 
+@media(max-width:800px) {
+    .hero {
+        flex-direction: column;
+        gap: 1px;
+    }
+
+    .hero_img {
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero_img img {
+        width: 95%;
+        height: 40vh;
+    }
+
+    .description {
+        gap: 10px;
+        padding: 20px;
+        align-items: center;
+    }
+
+    .description h1 {
+        font-size: 32px;
+    }
+
+    .explore_btn {
+        align-self: center;
+    }
+.features,.feature{
+    flex-direction: column;
+}
+.tag{
+    align-self: center;
+}
+.grid{
+    padding: 10px;
+
+}
+.grid_img{
+    border-radius: 0%;
+}
+.footer_container{
+   text-align: center;
+    flex-direction: column;
+}
+.icon_con{
+   justify-content: center;
+}
+}
